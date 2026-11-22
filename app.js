@@ -1,6 +1,13 @@
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const ini=n=>n.split(' ').map(w=>w[0]).slice(0,2).join('');
-const EAGLE=`<img src="assets/eagle-logo.svg" alt="" width="36" height="36">`;
+const EAGLE=`<svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+  <circle cx="24" cy="24" r="23" fill="#0F1F3D" stroke="#B8924A" stroke-width="2"/>
+  <path d="M11 33C10 20 18 10 29 11c6 1 8 5 7 8l-5 2c-1 7-6 14-13 16-4 0-7-1-7-4z" fill="#fff"/>
+  <path d="M36 19l8 3-8 3z" fill="#B8924A"/>
+  <path d="M24 14l4-6 1 7zM19 17l1-7 5 5z" fill="#fff"/>
+  <circle cx="30" cy="19" r="2.2" fill="#0F1F3D"/>
+</svg>`;
+
 const LOGO=`<a class="logo" href="#home" title="ThunderLink home">${EAGLE}<span>Thunder<b>Link</b></span></a>`;
 const INTS=['Finance','Marketing','Entrepreneurship','Accounting','Data analytics','Consulting','Sustainability','Sports','Music','Gaming','Cooking','Hiking'];
 const LF=['Social community','Coffee chats with upper-years','Club info','Study group'];
